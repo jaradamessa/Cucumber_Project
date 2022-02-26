@@ -19,20 +19,20 @@ public class TechfiosDefinition {
 		System.out.println("When User enters username as demo@techfios.com");
 	}
 	
-	@When("^User enters password as abc(\\d+)$")
-	public void user_enters_password_as_abc(int arg1) throws Throwable {
-	    throw new PendingException();
+	@When("^User enters password as \"([^\"]*)\"$")
+	public void user_enters_password_as(String password) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("When User enters password as \"abc123\"");
 	}
 	
 	@When("^User clicks on signin button$")
 	public void user_clicks_on_signin_button() throws Throwable {
-	    throw new PendingException();
-	   
+		System.out.println("When User clicks on signin button"); 
 	}
 
 	@Then("^User should land on dashboard page$")
 	public void user_should_land_on_dashboard_page() throws Throwable {
-	    throw new PendingException();
+	  System.out.println("ThenUser should land on dashboard page");
 	}
 
 

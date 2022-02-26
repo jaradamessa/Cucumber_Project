@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "techfios-login-functionality-validation;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 194382600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on techfios login page",
+            "match": {
+              "location": "TechfiosDefinition.user_is_on_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4621800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "TechfiosDefinition.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "TechfiosDefinition.user_enters_password_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2389300,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.TechfiosDefinition.user_clicks_on_signin_button(TechfiosDefinition.java:30)\r\n\tat ✽.When User clicks on signin button(src/test/java/features/TechfiosLogin.feature:7)\r\n",
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "TechfiosDefinition.user_clicks_on_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "TechfiosDefinition.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Techfios Login functionality Validation",
+    "description": "",
+    "id": "techfios-login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/TechfiosLogin.feature"
+  }
+]
